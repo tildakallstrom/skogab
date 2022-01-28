@@ -1,0 +1,799 @@
+/* Skapad av Tilda Källström 2021 */
+/* import av filer - normalize och fonter */
+@import url('normalize.css');
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500&display=swap');
+/* Noto Sans JP, weight 300, 400, 500 */
+html {
+    background-color: #e6f0e6;
+}
+body {
+    background-color: white;
+    max-width: 1500px !important; /* fungerar ej utan important */
+    margin: auto !important;
+    overflow-x: hidden;
+}
+.news1 {
+    background-color: beige;
+    max-width: 1500px;
+    margin: auto;
+    
+    padding: 1em;
+}
+/* wp-divar som får styling med important så de fungerar */
+.outer-container, .inner-container, .contentBlock {
+    max-width: 1498px !important;
+    width: 98% !important;
+    margin: auto !important;
+    margin-bottom: -2em;
+    padding-bottom: 1em;
+}
+.div {
+    max-width: 100%;
+    margin-top: -20px;
+}
+#widget {
+    max-width: 500px;
+    background-color: aliceblue;
+    margin: auto;
+    border-radius: 20px;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+#widget h2 {
+    text-align: center;
+}
+#widget p {
+    text-align: center;
+}
+h1, h2, h3, p {
+    font-family: 'Noto Sans JP', Sans-serif;
+}
+.h1h1 {
+    padding-top: 3em;
+}
+.newsh2 {
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+    padding-left: 0.5em;
+}
+.headerh1 {
+    margin-top: -1.7em;
+}
+/* li styling */
+li a {
+    color: #004d00;
+    text-decoration: none;
+}
+/* bredd, lineheight, padding på p*/
+p {
+    font-family: 'Noto Sans JP', Sans-serif;
+    font-weight: 300;
+    line-height: 1.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+    max-width: 30ch;
+    margin: auto;
+    margin-top: 0.5em;
+}
+/* formulär */
+form {
+    margin: auto;
+    max-width: 400px;
+}
+label {
+    font-family: 'Noto Sans JP', Sans-serif;
+}
+input[type=text]:focus {
+    background-color: white;
+    border: none;
+  }
+input[type=text], input[type=email], select, textarea {
+    width: 400px; 
+    padding: 12px; 
+    border: none;
+    box-sizing: border-box; 
+    resize: vertical;
+    border-bottom: solid 1px;
+    font-family: 'Noto Sans JP', Sans-serif;
+    margin: auto;
+    background-color: #ceb396;
+
+  }
+  input[type=submit] {
+    background-color: #003302;
+    color: white;
+    font-family: 'Noto Sans JP', Sans-serif;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    width: 400px;
+    cursor: pointer;
+  }
+  input[type=submit]:hover {
+    background-color: #b3d1b3;
+  }
+  /* div med bakgrundsfärg */
+  .container {
+    background-color: #ceb396;
+    padding: 20px;
+    margin-top: -5em;
+  }
+  /* bilder */
+  .imgabout {
+      padding-top: 1em;
+      margin: auto;
+      display: block;
+      max-width: 800px;
+  }
+  .aboutimg, a img {
+    max-width: 350px;
+}
+/* läs mer knapp vid hover */
+.readmore:hover {
+    background-color: #b3d1b3;
+}
+.readmore2:hover {
+    background-color: #b3d1b3;
+}
+.readmore2 {
+    background-color:#003302;
+    color: white;
+    font-family: 'Noto Sans JP', Sans-serif;
+    text-decoration: none;
+    max-width: 100px;
+    padding: 0.5em;
+    display: block;
+    margin: auto;
+    margin-bottom: 0.5em;
+    border-radius: 10px;
+    text-align: center;
+}
+/* footer, bakgrundsfärg, bredd */
+footer {
+    background-color: #003747;
+    color: white;
+    width: 100%;
+    padding-top: 2em;
+}
+/* mindre skärmar */
+@media only screen and (max-width: 900px) {
+ /* göm slideshow */
+    .alignnormal {
+     display: none;
+ }
+    .newsarticle img {
+        width: 100%;
+        min-width: 100%;
+        max-width: 500px;
+        margin: auto;
+        margin-bottom: 1em;
+    }
+    .newsh3 {
+        font-family: 'Noto Sans JP', Sans-serif;
+        margin-bottom: 0.5em;
+    }
+    /* wp-divar får styling */
+    .blocks-gallery-item {
+        width: 100%;
+        display: block;
+        max-width: 500px !important;
+        margin: auto !important;
+    }
+    .wp-block-image, .wp-block-image img {
+        width: 100%;
+        
+        height: 100%;
+        
+        max-width: 500px !important;
+        margin: auto;
+    }
+    .article-feature-image img {
+        width:100%;
+        max-width:650px;
+        height:auto;
+    }
+    .right .attachment-post-thumbnail, .size-post-thumbnail, .wp-post-image{
+        width:100%;
+        max-width:650px;
+        height:auto;
+    }
+    .right img {
+        width: 100%;
+        min-width: 70%;
+        max-width: 350px !important;
+        display: block;
+        margin: auto !important;
+    }
+    /* date under enskild nyhet */
+    .date {
+        font-family: 'Noto Sans JP', Sans-serif;
+        font-size: 0.8em;
+        padding-bottom: 0.5em;
+        text-align: center;
+        margin: auto;
+        max-width: 200px;
+    }
+.blocks-gallery-item figure img{
+    width: 100%;
+    min-width: 70%;
+    max-width: 500px;
+    margin: auto;
+}
+
+/* styling för header */
+header {
+    z-index: 10000;
+    background-color: #b3d1b3;
+    padding: 0;
+    top: 0; 
+    position: fixed;
+    width: 100%;
+    max-width: 1500px;
+    box-shadow: 0px 3px 5px #888;
+}
+.headergrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+} 
+    .logo {
+        width: 100px;
+        display: block;
+       margin-left: 5px;
+    }
+    .mobile {
+        float: right;
+    }
+    /* styling för mobilmeny */
+.navbar {
+    position: fixed;
+    top: 0;
+    padding-top: 2em;
+    margin-top: -2em;
+    right: 60px;
+    background-color: #b3d1b3;
+    width: 80%;
+    height: 40%;
+    transform: translateY(-110%);
+    transition: transform 0.4s ease;
+  }
+  .showNav {
+    transform: translateY(0);
+  }
+  ul {
+    width: 80%;
+    height: 90%;
+    list-style: none;
+   display: flex;
+    flex-flow: column nowrap;
+    line-height: 60px;
+  }
+ul li a {
+    color: #003302;
+    padding-bottom: 10px;
+    text-decoration: none;
+    font-family: 'Verdana', sans-serif;
+    font-size: 1.4rem;
+  }
+ ul li a:hover, ul li a:focus {
+    text-decoration: underline;
+  }        
+  .navbar .here {
+      text-decoration: underline;
+  }
+  /* mobilmeny med rotation vid nedfällning av meny */
+    .lineone, .linetwo, .linethree {
+      width: 38px;
+      height: 5px;
+      border-radius: 25px;
+      background-color: black;
+      margin: 7px;
+      transition: 0.5s;
+    }
+    .change .lineone {
+      transform: rotate(-45deg) translate(-1px, 10px);
+    }
+    .change .linetwo {
+      opacity: 0;
+    }
+  .change .linethree {
+  transform: rotate(45deg) translate(-5px, -19px);
+  }
+  .newsarticle {
+      max-width: 500px;
+      margin: auto;
+  }
+  /* läs mer knapp */
+  .readmore {
+    background-color:#003302;
+    color: white;
+    font-family: 'Noto Sans JP', Sans-serif;
+    text-decoration: none;
+    max-width: 100px;
+    width: 100px;
+    padding: 0.5em;
+    margin-left: 40%;
+    margin-bottom: 140px;
+    border-radius: 10px;
+    text-align: center;
+}
+.readmore1 {
+    background-color:#003302;
+    color: white;
+    font-family: 'Noto Sans JP', Sans-serif;
+    text-decoration: none;
+    max-width: 100px;
+    padding: 0.5em;
+    margin: auto;
+   margin-left: 40%;
+    margin-bottom: 0.5em;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.intro {
+    color: white;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 10px; 
+    padding-top: 12em;
+    font-family: 'Noto Sans JP', Sans-serif;
+}
+.centerh2 {
+    font-family: 'Noto Sans JP', Sans-serif;
+    max-width: 400px;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+    margin: auto;
+}
+.news {
+    margin: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    max-width: 400px;
+    border-radius: 20px;
+    background-color: white;
+}
+.introsec {
+    padding-bottom: 3.5em;
+    margin: auto;
+    padding-top: 2em;
+    margin-top: -9.5em;
+    margin-bottom: 5em;
+    background-color: #e8f8f5;
+}
+.centerh2 {
+    text-align: center;
+}
+
+.introsec1 {
+    padding-top: 1em;
+    padding-bottom: 3.5em;
+    margin-top: -5em;
+    margin-bottom: 5em;
+    background-color: #38613b;
+    color: white;
+}
+.wp-image-259 {
+    width: 100%;
+}
+.wp-block-cover .wp-block-cover-image {
+	max-height: 250px !important;
+}
+/* bakgrundsbild nyheter */
+.main3 {
+    background-image: url("../bilder/head1.jpg");
+    width: 100%;
+    height: 360px;
+    margin-top: 1em;
+    margin-bottom: -1em;
+    background-position: center top; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+}
+.container {
+    background-color: #ceb396;
+    width: 91%;
+    margin: auto;
+    margin-top: -5em;
+  }
+h1 {
+    text-align: center;
+        color: white;
+        padding-bottom: 0.3em;
+        padding-top: 0.2em;
+        font-family: 'Noto Sans JP', Sans-serif;
+        font-weight: 400;
+        font-size: 2.8em;
+        text-shadow: 3px 3px 8px #202020;
+    }
+  
+    .blocks-gallery-grid {
+        width: 100%;
+       
+    }
+.introimg {
+    max-width: 1000px;
+    width: 100%;
+    margin: auto;
+    }
+    article {
+        max-width: 960px;
+        border-top: solid 1px;
+        width: 100%;
+         margin: auto;
+         margin-bottom: 1em;
+    }
+      .newsimg2 {
+            width: 100%;
+           max-width: 480px;
+           margin-top: 1em;
+            }
+        
+ h3 {
+    font-family: 'Noto Sans JP', Sans-serif;
+    max-width: 540px;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 1em;
+    margin: auto;
+        }
+        .introh21 {
+            padding-left: 1em;
+            margin-left: 1em;
+        }      
+       
+  .imgabout {
+    width: 100%;
+    display: block;
+    width: 97.5%;
+    margin: auto;
+}
+.aboutimg, a img {
+    width: 48.5%;
+    margin: auto;
+  max-width: 300px;
+}
+.aboutimg2 {
+    width: 97.5%;
+    max-width: 885px;
+}
+.aboutimg3 {
+    margin-top: 1em;
+    max-width: 250px;
+    width: 30%;
+    }
+    .aboutimages {
+        width: 90%;
+        margin: auto;
+    }
+ .blocks-gallery-item figure a img{
+     max-width: 450px !important;
+     margin-top: 1em;
+ }
+form {
+    margin: auto;
+    max-width: 350px;
+    width: 90%;
+}
+.grids {
+    margin-top: 2em;
+}
+.leftcolumn {
+    margin-top: 2em;
+    background-color:#e6f0e6;
+}
+.rightcolumn {
+    margin-top: 2em;
+    border-top: 1px solid;
+}
+input[type=text], input[type=email], select, textarea {
+    max-width: 400px; 
+    width: 100%;
+  }
+  input[type=submit] {
+    max-width: 400px;
+    width: 100%;
+  }
+        .footerp {
+            max-width: 680px;
+            padding: 1em;
+            text-align: center;
+            margin-bottom: -1em;  
+}
+
+}
+/* styling för desktop */
+@media only screen and (min-width: 900px) {
+  
+header {
+    background-color: #b3d1b3;
+    padding: 0;
+    top: 0;
+    width: 100%;
+    max-width: 1500px;
+    box-shadow: 0px 3px 5px #888;
+}
+ul {
+    margin-top: -4em;
+    margin-bottom: 3px;
+    padding-bottom: 4.5em;
+    width: 100%;
+}
+li {
+    display: inline;
+   float: right;
+   margin-right: 15px;
+   font-size: 1.2em;
+   font-family: 'Noto Sans JP', Sans-serif;
+   font-weight: 400;
+   margin-top: 2.1em;
+}
+/* aktuell meny-styling */
+.menyhere, .current_page_item {
+   text-decoration: underline;
+}
+.menyhere a {
+    color: #004d00;
+}
+.meny a {
+    color: #004d00;
+    text-decoration: none;
+}
+a:hover {
+    color: #060538;
+    text-decoration: underline;
+}
+.logo {
+    width: 160px;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+.intro {
+    color: white;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 10px;
+    padding-top: 12em;
+    font-family: 'Noto Sans JP', Sans-serif;
+}
+.introh21 {
+    padding-left: 1em;
+    margin-left: 1em;
+}
+.centerh2 {
+    text-align: center;
+    font-family: 'Noto Sans JP', Sans-serif;
+    margin-left: 0.8em;
+}
+.news {
+    margin: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    max-width: 500px;
+    border-radius: 20px;
+    background-color: white;
+
+}
+.date {
+    font-family: 'Noto Sans JP', Sans-serif;
+    font-size: 0.8em;
+    text-align: center;
+    margin: auto;
+    max-width: 200px;
+}
+.outer-container, .contentBlock {
+    margin: auto;
+  width: 1500px;
+}
+.wp-block-image, .wp-block-image img {
+    width: 100%;
+    
+    height: 100%;
+    
+    max-width: 500px;
+    margin: auto;
+}
+.wp-image-343 {
+    display: none;
+}
+.right img {
+    width: 100%;
+    min-width: 90%;
+    max-width: 500px !important;
+    display: block;
+    padding-top: 1em;
+    margin: auto !important;
+}
+/* bakgrundsbild nyheter */
+.main3 {
+    background-image: url("../bilder/head1.jpg");
+    height: 380px; 
+    margin-top: -30px;
+    width: 100%;
+    background-position: center top; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+}
+h1 {
+text-align: center;
+    color: white;
+    padding-bottom: 0.7em;
+    padding-top: 0.6em;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 10px;
+    font-family: 'Noto Sans JP', Sans-serif;
+    font-weight: 400;
+    font-size: 3.5em;
+    text-shadow: 3px 3px 8px #202020;
+}
+
+.newsh3 {
+    font-family: 'Noto Sans JP', Sans-serif;
+    margin-left: 1em;
+    margin-bottom: 0.5em;
+}
+.readmore {
+    background-color:#003302;
+    color: white;
+    font-family: 'Noto Sans JP', Sans-serif;
+    text-decoration: none;
+    max-width: 100px;
+    padding: 0.5em;
+    margin: auto;
+    margin-left: -60%;
+    margin-bottom: 0.5em;
+    border-radius: 10px;
+    text-align: center;
+}
+.readmore1 {
+    background-color:#003302;
+    color: white;
+    font-family: 'Noto Sans JP', Sans-serif;
+    text-decoration: none;
+    max-width: 100px;
+    padding: 0.5em;
+    margin: auto;
+   margin-left: 3em;
+    margin-bottom: 0.5em;
+    border-radius: 10px;
+    text-align: center;
+}
+.introsec {
+    padding-top: 2em;
+    padding-bottom: 3.5em;
+    margin: auto;
+    margin-bottom: 5em;
+    background-color: #e8f8f5;
+}
+
+article {
+    margin: 20px;
+    border-bottom: solid 1px;
+    max-width: 880px;
+    margin: auto;
+    padding-top: 3em;
+    margin-bottom: 1em;
+}
+h2 {
+    font-family: 'Noto Sans JP', Sans-serif;
+   padding-left: 0.8em;
+
+}
+h3 {
+    font-family: 'Noto Sans JP', Sans-serif;
+    margin-bottom: -0.5em;
+}
+/* nyhetssection*/
+.newsarticle {
+    margin: 20px;
+    border-bottom: solid 1px;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+    max-width: 880px;
+    margin: auto;
+    padding-top: 3em;
+    margin-bottom: 1em;
+}
+.right {
+    width: 100%;
+    max-width: 350px;
+    margin-left: 4em;
+    float: right;
+}
+.right .attachment-post-thumbnail, .size-post-thumbnail, .wp-post-image{
+    width:100%;
+    max-width:650px;
+    height:auto;
+}
+.right1 {
+    width: 100%;
+    max-width: 500px;
+    margin-right: 4em;
+    float: right;
+}
+.introsec {
+    padding-top: 1em;
+    padding-bottom: 3.5em;
+    margin: auto;
+    margin-bottom: 5em;
+    background-color: #e8f8f5;
+}
+p {
+    max-width: 30ch;
+    margin: auto;
+}
+
+    .newsimg2 {
+        width: 480px;
+       margin-top: 1em;
+        }
+/*kontaktform*/
+form {
+    margin: auto;
+    max-width: 400px;
+}
+
+input[type=text], input[type=email], select, textarea {
+    width: 400px; 
+    padding: 12px; 
+    border: none;
+    box-sizing: border-box; 
+    resize: vertical;
+    border-bottom: solid 1px;
+    font-family: 'Noto Sans JP', Sans-serif;
+    margin: auto;
+    background-color: #ceb396;
+  }
+ 
+  input[type=submit] {
+    background-color: #003302;
+    color: white;
+    font-family: 'Noto Sans JP', Sans-serif;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    width: 400px;
+    cursor: pointer;
+  }
+  
+  .imgabout {
+    display: block;
+    max-width: 885px;
+    margin: auto;
+}
+.aboutimg, a img {
+  max-width: 440px;
+}
+.aboutimg2 {
+    max-width: 650px;
+    width: 90%;
+}
+.aboutimg3 {
+    margin-top: 1em;
+    max-width: 250px;
+    }
+.aboutimages {
+    width: 100%;
+    margin: auto;
+    max-width: 760px;
+}
+.grids {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.leftcolumn {
+    margin-top: 2em;
+    background-color:#e6f0e6;
+}
+.rightcolumn {
+    margin-top: 2em;
+}
+}
