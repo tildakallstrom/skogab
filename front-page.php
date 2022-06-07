@@ -1,10 +1,5 @@
 <?php get_header(); ?>
-<?php /* koden nedan tömde sidan på innehåll
-if(is_active_sidebar('widget')) : 
- dynamic_siderbar('widget');
-endif; */
-
-
+<?php 
 if (have_posts()) {
 
     the_post();
