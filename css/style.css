@@ -1,10 +1,7 @@
 /* Skapad av Tilda Källström 2021 */
-/* import av filer - normalize och fonter */
 @import url('normalize.css');
-
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500&display=swap');
 
-/* Noto Sans JP, weight 300, 400, 500 */
 html {
     background-color: #e6f0e6;
 }
@@ -20,7 +17,6 @@ body {
     background-color: beige;
     max-width: 1500px;
     margin: auto;
-
     padding: 1em;
 }
 
@@ -77,13 +73,11 @@ p {
     margin-top: -1.7em;
 }
 
-/* li styling */
 li a {
     color: #004d00;
     text-decoration: none;
 }
 
-/* bredd, lineheight, padding på p*/
 p {
     font-family: 'Noto Sans JP', Sans-serif;
     font-weight: 300;
@@ -96,7 +90,6 @@ p {
     margin-top: 0.5em;
 }
 
-/* formulär */
 form {
     margin: auto;
     max-width: 400px;
@@ -124,7 +117,6 @@ textarea {
     font-family: 'Noto Sans JP', Sans-serif;
     margin: auto;
     background-color: #ceb396;
-
 }
 
 input[type=submit] {
@@ -142,14 +134,12 @@ input[type=submit]:hover {
     background-color: #b3d1b3;
 }
 
-/* div med bakgrundsfärg */
 .container {
     background-color: #ceb396;
     padding: 20px;
     margin-top: -5em;
 }
 
-/* bilder */
 .imgabout {
     padding-top: 1em;
     margin: auto;
@@ -162,7 +152,6 @@ a img {
     max-width: 350px;
 }
 
-/* läs mer knapp vid hover */
 .readmore:hover {
     background-color: #b3d1b3;
 }
@@ -185,7 +174,6 @@ a img {
     text-align: center;
 }
 
-/* footer, bakgrundsfärg, bredd */
 footer {
     background-color: #003747;
     color: white;
@@ -193,10 +181,8 @@ footer {
     padding-top: 2em;
 }
 
-/* mindre skärmar */
 @media only screen and (max-width: 900px) {
 
-    /* göm slideshow */
     .alignnormal {
         display: none;
     }
@@ -214,7 +200,6 @@ footer {
         margin-bottom: 0.5em;
     }
 
-    /* wp-divar får styling */
     .blocks-gallery-item {
         width: 100%;
         display: block;
@@ -252,7 +237,6 @@ footer {
         margin: auto;
     }
 
-    /* date under enskild nyhet */
     .date {
         font-family: 'Noto Sans JP', Sans-serif;
         font-size: 0.8em;
@@ -269,7 +253,6 @@ footer {
         margin: auto;
     }
 
-    /* styling för header */
     header {
         z-index: 10000;
         background-color: #b3d1b3;
@@ -296,7 +279,6 @@ footer {
         float: right;
     }
 
-    /* styling för mobilmeny */
     .navbar {
         position: fixed;
         top: 0;
@@ -340,7 +322,6 @@ footer {
         text-decoration: underline;
     }
 
-    /* mobilmeny med rotation vid nedfällning av meny */
     .lineone,
     .linetwo,
     .linethree {
@@ -369,7 +350,6 @@ footer {
         margin: auto;
     }
 
-    /* läs mer knapp */
     .readmore {
         background-color: #003302;
         color: white;
@@ -456,7 +436,6 @@ footer {
         max-height: 250px !important;
     }
 
-    /* bakgrundsbild nyheter */
     .main3 {
         background-image: url("../bilder/head1.jpg");
         width: 100%;
@@ -602,7 +581,6 @@ footer {
 
 }
 
-/* styling för desktop */
 @media only screen and (min-width: 900px) {
 
     header {
@@ -631,7 +609,6 @@ footer {
         margin-top: 2.1em;
     }
 
-    /* aktuell meny-styling */
     .menyhere,
     .current_page_item {
         text-decoration: underline;
@@ -685,7 +662,6 @@ footer {
         max-width: 500px;
         border-radius: 20px;
         background-color: white;
-
     }
 
     .date {
@@ -705,9 +681,7 @@ footer {
     .wp-block-image,
     .wp-block-image img {
         width: 100%;
-
         height: 100%;
-
         max-width: 500px;
         margin: auto;
     }
@@ -725,7 +699,6 @@ footer {
         margin: auto;
     }
 
-    /* bakgrundsbild nyheter */
     .main3 {
         background-image: url("../bilder/head1.jpg");
         height: 380px;
@@ -805,7 +778,6 @@ footer {
     h2 {
         font-family: 'Noto Sans JP', Sans-serif;
         padding-left: 0.8em;
-
     }
 
     h3 {
@@ -865,7 +837,6 @@ footer {
         margin-top: 1em;
     }
 
-    /*kontaktform*/
     form {
         margin: auto;
         max-width: 400px;

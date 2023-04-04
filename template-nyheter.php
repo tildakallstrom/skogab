@@ -5,7 +5,6 @@ Template Name: Nyheter
 ?>
 <?php get_header(); ?>
 
-
 <?php
            if (have_posts()) {
                the_post();
@@ -38,9 +37,6 @@ if (have_posts()) {
     }
 }
 ?>
-
-  
-
 </section> 
 
 <?php get_footer(); ?>

